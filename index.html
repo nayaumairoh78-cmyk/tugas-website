@@ -1,129 +1,432 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Taman Bermain Ceria</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <title>Sweet Dessert</title>
+
+    <!-- Bootstrap CSS ONLINE -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <!-- CSS sendiri -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- NAVBAR -->
-    <header class="navbar">
-      <div class="logo">Taman Bermain Ceria</div>
-      <nav class="nav-menu">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#products">Products</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <a href="#login" class="btn-login">Login</a>
-    </header>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark main-color">
+    <div class="container-fluid">
+        <a class="navbar-brand me-auto" href="#">Sweet Dessert</a>
 
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <!-- HERO / LANDING -->
-    <section class="hero" id="home">
-        <h1>Taman Ceria Untuk Semua</h1>
-        <p>Nikmati taman bermain yang nyaman dan menyenangkan.</p>
-        <a href="#" class="btn">Pesan Sekarang</a>
-    </section>
-
-    
-
-    <!-- ABOUT -->
-<section class="about" id="about">
-  <h2>About Us</h2>
-
-  <div class="about-container">
-    <!-- GAMBAR -->
-    <div class="about-image">
-      <img src="tiket.jpg" >
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">promo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">pelayanan</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Best seller</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="bi bi-car-front"></i>Subscribe
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
+</nav>
 
-    <!-- TEKS -->
-    <div class="about-text">
-      <p>
-        Tiket liburan murah untuk semua. Toko kami menyediakan banyak tiket, mulai dari tiket
-    trasportasi, wisata, dan hotel. </p>
+<!-- Banner -->
+<div class="container-fluid banner d-flex align-items-center">
+    <div class="container text-center">
+        <h1 class="text-light">Selamat Datang Di Dessertku </h1>
+        <p class="text-light mb-4">Cemilan manis yang membuat hari harimu lebih indah</p>
+
+        <!-- Input Group -->
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="input-group input-group-lg">
+                    <select class="form-control">
+                        <option selected>Cari Dessert favorimu..</option>
+                        <option>Cake</option>
+                        <option>Ice cream</option>
+                        <option>Brownis</option>
+                        <option>Cookies</option>
+                    </select>
+                    <button class="btn btn-outline-warning text-light" type="button">
+                        Search
+                    </button>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</section>
+</div>
+<!-- PROMO -->
+<div class="container-fluid py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Promo Special</h2>
+        <h4 class="PROMO">Dapatkan promo di bulan ini</h4>
 
+        <div class="row justify-content-center">
 
-<section class="products" id="products">
-  <h2>Our Products</h2>
+            <!-- CAKE -->
+            <div class="col-md-3">
+                <div class="card">
+                   <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=400&q=80" class="card-img-top" alt="Chocolate Cake">
+                    <div class="card-body">
+                        <h5 class="card-title">Chocolate Cake</h5>
+                        <p class="card-text">Diskon 20%</p>
+                        <a href="#" class="btn btn-primary">Order</a>
+                    </div>
+                </div>
+            </div>
 
-  <div class="card-container">
-    <div class="card">
-      <img src="Biang lala.jpg" alt="Crimson Romance">
-      <div class="card-content">
-        <h3>Tiket Bianglala</h3>
-        <p>Tiket bianglala murah untuk semua.</p>
-        <a href="#contact" class="btn">Shop Now</a>
-      </div>
+            <!-- ICE CREAM -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=400&q=80" class="card-img-top" alt="Ice Cream">
+                    <div class="card-body">
+                        <h5 class="card-title">All varian ice cream</h5>
+                        <p class="card-text">Promo paket keluarga</p>
+                        <a href="#" class="btn btn-primary">Order</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- COOKIES -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=400&q=80" class="card-img-top" alt="Cookies">
+                    <div class="card-body">
+                        <h5 class="card-title">Cookies</h5>
+                        <p class="card-text">Diskon 15%</p>
+                        <a href="#" class="btn btn-primary">Order</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
+</div>
+<!--Section pelayanan-->
+<div class="container-fluid py-5 pelayanan">
+    <div class="container">
+        <h2 class="text-center text-light mb-5">Layanan kami</h2>
 
-    
-    <div class="card">
-      <img src="play.jpg" alt="Lily Elegance">
-      <div class="card-content">
-        <h3>Tiket Playground </h3>
-        <p>Tiket yang cocok untuk anak-anak.</p>
-        <a href="#contact" class="btn">Shop Now</a>
-      </div>
+        <div class="row justify-content-center text-center text-light">
+
+            <!-- Dine -->
+            <div class="col-sm-6 col-lg-3 mb-4 pelayanan-content">
+                <div class="d-flex justify-content-center mb-3">
+                    <div class="icon-circle rounded-circle d-flex align-items-center justify-content-center border border-light border-2">
+                        <i class="bi bi-shop"></i>
+                    </div>
+                </div>
+                <h5 class="text-light">Dine In</h5>
+                <p class="text-light">Tempat Nyaman Dan instagranabel</p>
+            </div>
+
+            <!-- Delivery -->
+            <div class="col-sm-6 col-lg-3 mb-4 pelayanan-content">
+                <div class="d-flex justify-content-center mb-3">
+                    <div class="icon-circle rounded-circle d-flex align-items-center justify-content-center border border-light border-2">
+                        <i class="bi bi-bicycle"></i>
+                    </div>
+                </div>
+                <h5 class="text-light">Delivery</h5>
+                <p class="text-light">Pesanan sampai ke rumah</p>
+            </div>
+
+            <!-- Costum -->
+            <div class="col-sm-6 col-lg-3 mb-4 pelayanan-content">
+                <div class="d-flex justify-content-center mb-3">
+                    <div class="icon-circle rounded-circle d-flex align-items-center justify-content-center border border-light border-2">
+                        <i class="bi bi-cake2"></i>
+                    </div>
+                </div>
+                <h5 class="text-light">Costum cake</h5>
+                <p class="text-light">Melayani costum cake ulang tahun</p>
+            </div>
+
+        </div>
     </div>
+</div>
+<!-- BEST SELLER -->
+<div class="container-fluid py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Best Seller</h2>
+        <h4 style="text-align:center;">Dessert paling banyak diminati pelanggan</h4>
 
-    
-    <div class="card">
-      <img src="kuda.jpg" alt="Pink Petal Bliss">
-      <div class="card-content">
-        <h3>Tiket Komedi Putar </h3>
-        <p>Tiket putar dengan harga terjangkau.</p>
-        <a href="#contact" class="btn">Shop Now</a>
-      </div>
+        <div class="row justify-content-center">
+
+            <!-- 1 -->
+            <div class="col-md-3">
+                <div class="card">
+                   <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=400&q=80" class="card-img-top" alt="Cookies">
+                    <div class="card-body">
+                        <h5 class="card-title">Cookies</h5>
+                        <p class="card-text">Paling diminati pelanggan</p>
+                        <a href="#" class="btn btn-primary">Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1590841609987-4ac211afdde1?w=400" class="card-img-top" alt="Brownies">
+                    <div class="card-body">
+                        <h5 class="card-title">Brownis</h5>
+                        <p class="card-text">Lembut Dan Manis</p>
+                        <a href="#" class="btn btn-primary">Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=400&q=80" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Ice Cream</h5>
+                        <p class="card-text">Disukai oleh semua kalangan dari anak anak sampai orang dewasa</p>
+                        <a href="#" class="btn btn-primary">Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400" class="card-img-top" alt="Chocolate Cake">
+                    <div class="card-body text-
+                    <div class="card-body">
+                        <h5 class="card-title">Chocolate cake</h5>
+                        <p class="card-text">Rasa coklat yang rich dan lembut selalu jadi favorit</p>
+                        <a href="#" class="btn btn-primary">Details</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
+</div>
+<!-- Tombol -->
+        <div class="text-center mt-3">
+            <button class="btn btn-warning btn-lg text-light px-4">Lihat Lainnya</button>
+        </div>
 
-<section class="contact" id="contact">
-  <h2>Contact Us</h2>
-  <p class="subtitle">We’d love to hear from you</p>
-
-  <div class="contact-container">
-
-    <!-- Info -->
-    <div class="contact-info">
-      <p><strong>Address</strong><br>Mojokerto, East Java</p>
-      <p><strong>Email</strong><br>tamanbermainceria@gmail.com</p>
-      <p><strong>Phone</strong><br>+62 812 3456 7890</p>
-      <p><strong>Open Hours</strong><br>Mon – Sat | 08.00 – 20.00</p>
     </div>
+</div>
 
-    <!-- Form -->
-<form class="contact-form">
-  <input type="text" name="fullname" placeholder="Full Name" required>
-  <input type="email" name="email" placeholder="Email" required>
-  <input type="tel" name="phone" placeholder="Phone Number">
-  <input type="text" name="subject" placeholder="Subject" required>
-  <textarea name="message" placeholder="Your Message" required></textarea>
-  <button type="submit">Send Message</button>
-</form>
-  </div>
-</section>
+<div class="container-fluid py-5 testimony">
+    <div class="container">
+        <h2 class="text-center text-light mb-2">Apa Kata Customer</h2>
+        <p class="text-center mb-5" style="color: rgba(255,255,255,0.6); font-size: 0.95rem;">Kepuasan pelanggan adalah prioritas kami</p>
 
-<!-- FOOTER -->
-<footer class="footer">
-  <div class="footer-content">
-    <h4>Taman Bermain Ceria</h4>
-    <p>Taman bermain yang nyaman dan bersih!.</p>
-  </div>
+        <div class="row g-4">
 
-  <p class="copyright">
-    © 2025 Naya Umairoh. All rights reserved.
-  </p>
+            <!-- Card 1 -->
+            <div class="col-sm-6 col-lg-4">
+                <div class="testimony-card">
+                    <div class="quote-icon">"</div>
+                    <h5>Dessertnya enak banget</h5>
+                    <div class="author">— Zakky</div>
+                    <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    </div>
+                    <p>Brownisnya lembut, manisnya pas dan fresh pasti order lagi</p>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-sm-6 col-lg-4">
+                <div class="testimony-card">
+                    <div class="quote-icon">"</div>
+                    <h5>Chocolate cakenya enak</h5>
+                    <div class="author">— Rosa aprilia</div>
+                    <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                    </div>
+                    <p>Chocolate cake-nya lembut banget dan rasa coklatnya rich,favorit keluarga</p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-sm-6 col-lg-4">
+                <div class="testimony-card">
+                    <div class="quote-icon">"</div>
+                    <h5>Tempatnya nyaman dan bersih</h5>
+                    <div class="author">— Saskia maulidia</div>
+                    <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                    </div>
+                    <p>Tempatnya nyaman dan instagramabel, cocok buat nongki sambil menikmati dessert</p>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-sm-6 col-lg-4">
+                <div class="testimony-card">
+                    <div class="quote-icon">"</div>
+                    <h5>Pelayanan cepat</h5>
+                    <div class="author">- Meii</div>
+                    <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    </div>
+                    <p>Pelayannya ramah dan cepat, pesenanya datang tidak lama dan sesuai reques</p>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-sm-6 col-lg-4">
+                <div class="testimony-card">
+                    <div class="quote-icon">"</div>
+                    <h5>Harga terjangkau</h5>
+                    <div class="author">— umairo</div>
+                    <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                    </div>
+                    <p>Rasa enak, kualitas bagus dan harganya masih terjangkau worth it banget</p>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-sm-6 col-lg-4">
+                <div class="testimony-card">
+                    <div class="quote-icon">"</div>
+                    <h5>Delivery mudah & cepat</h5>
+                    <div class="author">— Rindiani</div>
+                    <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    </div>
+                    <p>Pesen online sangat mudah dan pengirimannya cepat, dessert samapi dalam kondisi baik dan fresh</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid py-5">
+    <div class="container">
+
+        <h2 class="text-center mb-2">Order dessert</h2>
+        <p class="text-center text-muted mb-5">Pesan dessert favoritmu sekarang, jangan samapi kehabisan!!</p>
+
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+
+                <div class="mb-3">
+                    <label class="form-label">Nama</label>
+                    <input type="text" class="form-control">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">No. Whatsapp</label>
+                    <input type="text" class="form-control">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Dessert yang dipesan</label>
+                    <input type="text" class="form-control">
+                </div>
+
+                <div class="d-grid">
+                    <button class="btn btn-warning text-light">Order sekarang</button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- SECTION FOOTER -->
+<div class="container-fluid py-5 footer">
+    <div class="container">
+
+       
+        <h5 class="text-center text-light mb-3">Temui Kami</h5>
+
+        <div class="d-flex justify-content-center mb-5" style="gap: 70px">
+            <a href="https://facebook.com/username" target="_blank" class="social-icon">
+                <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://instagram.com/username" target="_blank" class="social-icon">
+                <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://twitter.com/username" target="_blank" class="social-icon">
+                <i class="bi bi-twitter-x"></i>
+            </a>
+            <a href="https://youtube.com/@username" target="_blank" class="social-icon">
+                <i class="bi bi-youtube"></i>
+            </a>
+        </div>
+ <!-- Subscribe -->
+        <h5 class="text-center text-light mb-1">Subscribe</h5>
+        <p class="text-center text-muted mb-3">untuk informasi tentang promo</p>
+
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="input-group">
+                    <input type="email" class="form-control" placeholder="Ketikkan Email">
+                    <button class="btn btn-warning text-light">Subscribe</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<footer class="bg-dark text-light py-4">
+    <div class="container">
+
+        <div class="row text-center text-md-start">
+
+            <div class="col-md-4 mb-3 mb-md-0">
+                <h5 class="fw-bold">Kafe Saya</h5>
+                <p class="text-muted small">Tempat makan enak, nyaman, dan terjangkau untuk semua kalangan.</p>
+            </div>
+
+            <div class="col-md-4 mb-3 mb-md-0">
+                <h6 class="fw-bold mb-3">Navigasi</h6>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-muted text-decoration-none">Home</a></li>
+                    <li><a href="#" class="text-muted text-decoration-none">Produk</a></li>
+                    <li><a href="#" class="text-muted text-decoration-none">Promo</a></li>
+                    <li><a href="#" class="text-muted text-decoration-none">Reservasi</a></li>
+                </ul>
+            </div>
+            
+            <div class="col-md-4">
+                <h6 class="fw-bold mb-3">Kontak</h6>
+                <ul class="list-unstyled text-muted small">
+                    <li class="mb-1"><i class="bi bi-geo-alt-fill me-2"></i>Jl. Contoh No. 123, Surabaya</li>
+                    <li class="mb-1"><i class="bi bi-telephone-fill me-2"></i>+62 812 3456 7890</li>
+                    <li><i class="bi bi-envelope-fill me-2"></i>Tokosaya@email.com</li>
+                </ul>
+            </div>
+        </div>
+        <hr class="border-secondary mt-4 mb-3">
+        <p class="text-center text-muted small mb-0">
+            &copy; 2025 Tokoh Saya. All Rights Reserved.
+        </p>
+    </div>
 </footer>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
-
-
-
-    
