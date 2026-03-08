@@ -1,0 +1,88 @@
+/* BODY */
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    padding:0;
+    background:#f8f5f2;
+}
+
+/* NAVBAR */
+.navbar{
+    background:#4b2e2e;
+    padding:15px;
+}
+
+.navbar a{
+    color:white;
+    text-decoration:none;
+    margin-right:15px;
+    font-weight:500;
+}
+
+/* HEADER */
+.header{
+    background:#8d7b72;
+    padding:40px 20px;
+    text-align:center;
+    color:black;
+}
+
+.header h1{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+/* SEARCH */
+.search-box{
+    margin-top:20px;
+}
+
+/* PRODUK */
+.produk-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
+    padding:40px;
+}
+
+/* CARD PRODUK */
+.produk{
+    background:white;
+    border-radius:12px;
+    width:250px;
+    padding:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    text-align:center;
+}
+
+.produk img{
+    width:100%;
+    border-radius:10px;
+}
+
+.produk h3{
+    color:#d81b60;
+}
+
+.harga{
+    color:#c2185b;
+    font-weight:bold;
+}
+
+/* FOOTER */
+footer{
+    background:#3e2723;
+    color:white;
+    padding:30px;
+    margin-top:40px;
+}
+
+footer h4{
+    margin-top:10px;
+}
+
+footer a{
+    color:#ffccbc;
+    text-decoration:none;
+}
